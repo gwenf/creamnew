@@ -1,0 +1,163 @@
+//import compass
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+
+@import "variables";
+@import "mixins";
+
+//general body styles
+body {
+  font-family: $bodyFont;
+  background: lighten($green, 12%);
+  font-size: 2em;
+}
+
+ul {
+  list-style: disc outside none;
+}
+
+//header styles
+header {
+  .head_img{
+    font-family: $headFont;
+    background: url('../images/imageCreamHeader.png') no-repeat 100%;
+    background-size: cover;
+    height: 1000px;
+    min-width: 100%;
+    .head_text {
+      color: lighten($purple, 30%);
+      padding-top: 5%;
+      font-size: 2em;
+      h1:first-child {
+        padding-bottom: 10%;
+        font-size: 1.7em;
+      }
+      span {
+        color: $skin;
+        font-size: 1.5em;
+      }
+      h1:nth-child(2) {
+        padding-bottom: 5%;
+      }
+      ul {
+        padding-left: 10%;
+        color: saturate(lighten($purple, 40%), 10%);
+      }
+      @media (max-width: 1200px) {
+        h1, li {
+          font-size: .8em;
+          text-shadow: 0 0 12px white;
+        }
+        h1:first-child {
+          font-size: .5em;
+        }
+      }
+      @media (max-width: 800px) {
+        h1 {
+          font-size: .8em;
+        }
+        h1:first-child {
+          font-size: .9em;
+        }
+        li {
+          font-size: .5em;
+          padding: 2% 0;
+        }
+        text-align: right;
+        padding-top: 5%;
+
+      }
+      @media (min-width: 1200px) {
+        h1 {
+          margin-top: 10%;
+        }
+      }
+      button {
+        @include btn;
+      }
+    }//end head_text section
+    @media (min-width: 801px) {
+     height: 850px;
+    }
+
+    @media (max-width: 800px) {
+     height: 400px;
+    }
+
+    @media (max-width: 500px) {
+      height: 250px;
+    }
+  }//end head_img
+  hr {
+    margin: 7% 5%;
+  }
+}//end header
+
+//main body styles
+.icon_section {
+  padding-top: 100%;
+  img {
+    width: 70%;
+    display: block;
+    margin: 5% auto;
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      padding-top: 50%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .icon_text {
+      text-align: center;
+    }
+  }
+  @media (max-width: 420px) {
+    padding-top: 120%;
+  }
+}
+
+//image right above the footer and below the main content
+.product_section {
+  background-image: url(../images/creamBanner.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  margin: 0 auto;
+
+ //  @media (min-width: 769px) {
+ //
+ //  }
+  @media (max-width: 768px) {
+    background: url('../images/creamBadgesSmallScreen.png') no-repeat;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    margin-top: 520%;
+  }
+ //  @media (min-width: 801px) {
+ //   height: 850px;
+ //  }
+ //
+ //  @media (max-width: 800px) {
+ //   height: 400px;
+ // }
+}
+
+
+//footer styles
+footer {
+  font-size: .5em;
+  .copyright {
+    background-color: lighten($beige, 10%);
+    margin-top: 300%;
+    padding: 10% 0;
+    text-align: center;
+  }
+  .ingredients, .disclaimer {
+    margin: 5%;
+
+  }
+}

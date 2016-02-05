@@ -1,0 +1,19 @@
+
+@mixin btn {
+  font-size: .7em;
+
+  background: transparent;
+  border: 5px solid $darkGreen;
+  color: lighten($skin, 10%);
+  border-radius: 7px;
+
+  margin: 5% 0;
+  &:hover, &:active, &:visited, &:focus {
+    background-color: $darkGreen;
+    border-color: $beige;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px gray;
+    transition: all .2s ease-in-out;
+  }
+}
