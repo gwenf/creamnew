@@ -25,9 +25,13 @@ if (env === 'development'){
 console.log(sassStyle);
 
 jsSources = [
-      'components/scripts/script.js',
+      'components/scripts/jquery-1.12.0.min.js',
+      'components/scripts/script.js'
     ];
-sassSources = ['components/sass/style.scss'];
+sassSources = [
+  'components/sass/style.scss',
+  'components/sass/cartstyle.scss'
+];
 htmlSources = [outputDir + '*.html'];
 
 gulp.task('js', function() {

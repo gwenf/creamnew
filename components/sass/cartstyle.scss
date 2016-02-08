@@ -1,0 +1,93 @@
+@import "style";
+
+
+form {
+  margin-top: 40%;
+  padding: 2%;
+  font-size: 1em;
+
+  legend {
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 0 0 10px white;
+  }
+  .cart {
+    border: 3px solid saturate(lighten($purple, 20%), 20%);
+    border-radius: 7px;
+    padding: 4%;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: .8em;
+    h1, h3 {
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 1.2em;
+    }
+    p:first-child {
+      padding: 3%;
+    }
+    p:nth-child(2) {
+      padding: 0 3% 3%;
+    }
+    .cart-image img {
+      display: block;
+      margin: 0 auto 4%;
+    }
+  }
+  .checkbox {
+    font-size: .5em;
+    font-family: sans-serif;
+  }
+  fieldset {
+    padding: 3%;
+    margin-top: 4%;
+    border: 2px solid lighten($skin, 20%);
+    border-radius: 7px;
+  }
+  label {
+    margin-top: 10%;
+  }
+  select {
+    margin-top: 5%;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 10%;
+    .checkbox label {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.product_section {
+  margin-top: 260%;
+  @media (min-width: 450px) {
+    margin-top: 220%;
+  }
+  @media (min-width: 500px) {
+    margin-top: 200%;
+  }
+  @media (min-width: 768px) {
+    margin-top: 100%;
+  }
+  @media (min-width: 801px) {
+    margin-top: 70%;
+  }
+  @media (min-width: 1000px) {
+    margin-top: 0;
+  }
+}
+
+
+
+footer {
+  .copyright_section {
+    padding: 2%;
+    background: lighten($beige, 15%);
+  }
+  hr {
+    padding: 0;
+    margin: 0;
+  }
+}
