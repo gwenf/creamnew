@@ -1,0 +1,29 @@
+//footer styles
+footer {
+  font-size: .5em;
+  .copyright {
+    background-color: lighten($beige, 10%);
+    padding: 4% 0;
+    text-align: center;
+    @media (min-width: 768px) {
+      padding: 2%;
+    }
+  }
+  nav {
+    width: 50%;
+    margin: 0 auto;
+    a {
+      color: black;
+      font-size: 1.4em;
+    }
+    @media (min-width: 768px) {
+      width: 30%;
+    }
+  }
+  .ingredients, .disclaimer {
+    margin: 5%;
+    @media (min-width: 768px) {
+      margin: 1%;
+    }
+  }
+}

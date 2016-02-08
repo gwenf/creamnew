@@ -7,15 +7,15 @@
   <link href='https://fonts.googleapis.com/css?family=Courgette|Lobster+Two:400,400italic,700|Kaushan+Script|Satisfy|Lobster'
   rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
   <script src='js/script.js'></script>
 </head>
 <body>
 <div class="greenback">
   <header class=''>
     <div class="head_img">
-      <div class="head_text col-sm-6 col-sm-offset-4
-                  col-md-7 col-md-offset-4
-                  col-lg-6 col-lg-offset-6">
+      <div class="head_text col-sm-8 col-sm-offset-4
+                  col-md-6 col-md-offset-6">
         <h1>Try VitaYouth <span>FREE</span></h1>
         <h1>Benefits Include:</h1>
         <ul>
@@ -23,11 +23,15 @@
           <li>Hypo-allergenic</li>
           <li>Good for all skin types - including oily skin!</li>
         </ul>
-        <button class='btn btn-success'>Order Now</button>
+        <a href='#buyNow'>
+          <button class='btn btn-success'>Order Now</button>
+        </a>
       </div>
-      <hr>
+
     </div>
   </header>
+
+<hr>
 
 <section class='main-body container'>
   <div class="icon_section row">
@@ -70,11 +74,13 @@
   </div>
     <!-- end icon section -->
   <div class="row formGroup">
-    <div class="creamImage col-md-5 col-md-offset-1 container-fluid">
-      <img src="images/creamGirlBottle.png" alt="lady with cream bottle">
+    <div class="creamImage
+    col-xs-12 col-lg-8 col-lg-push-4 container-fluid">
+      <img class='img-thumbnail'
+      src="images/creamGirlBottle.png" alt="lady with cream bottle">
     </div>
-    <form id='buyNow' class='col-md-10 col-md-offset-1 col-lg-5
-                          col-lg-offset-0 container'>
+    <form id='buyNow' class='col-md-10 col-md-offset-1 col-lg-4
+                      col-lg-offset-0 col-lg-pull-8 container'>
         <div class="form-group">
             <label for="firstName">First Name</label>
             <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
@@ -123,6 +129,13 @@
 
 <footer>
   <div class="copyright">
+    <nav class='navbar footer-nav'>
+      <ul class='nav text-center'>
+        <li><a href='terms.html' target='_blank'>Privacy Policy</a></li>
+        <li><a href='terms.html' target='_blank'>Terms & Conditions</a></li>
+        <li><a href='contact.html' target='_blank'>Contact</a></li>
+      </ul>
+    </nav>
     <p>&copy 2016 VitaYouth</p>
   </div>
 

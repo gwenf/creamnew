@@ -1,0 +1,10 @@
+//general body styles
+body {
+  font-family: $bodyFont;
+  background: lighten($green, 12%);
+  font-size: 2em;
+}
+
+ul {
+  list-style: disc outside none;
+}

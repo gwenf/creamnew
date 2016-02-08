@@ -137,11 +137,6 @@ header .head_img .head_text button:hover, header .head_img .head_text button:act
   box-shadow: 0 0 10px gray;
   transition: all .2s ease-in-out;
 }
-@media (min-width: 801px) {
-  header .head_img {
-    height: 850px;
-  }
-}
 @media (max-width: 800px) {
   header .head_img {
     height: 400px;
@@ -152,32 +147,91 @@ header .head_img .head_text button:hover, header .head_img .head_text button:act
     height: 250px;
   }
 }
-header hr {
-  margin: 7% 5%;
+@media (min-width: 801px) {
+  header .head_img {
+    height: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  header .head_img {
+    height: 850px;
+  }
+}
+
+hr {
+  margin: 110% 5% 0;
+}
+@media (min-width: 406px) {
+  hr {
+    margin-top: 40%;
+  }
+}
+@media (min-width: 768px) {
+  hr {
+    margin: 0;
+  }
 }
 
 .icon_section {
-  padding-top: 100%;
+  padding-top: 10%;
+  text-align: center;
 }
 .icon_section img {
   width: 70%;
   display: block;
   margin: 5% auto;
 }
-@media (min-width: 1200px) {
-  .icon_section h1 {
-    padding-top: 50%;
-  }
-}
-@media (max-width: 1200px) {
-  .icon_section .icon_text {
-    text-align: center;
-  }
-}
-@media (max-width: 420px) {
+@media (min-width: 406px) {
   .icon_section {
-    padding-top: 120%;
+    padding-top: 90%;
   }
+}
+@media (min-width: 501px) {
+  .icon_section {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .icon_section img {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .icon_section .icon_text {
+    text-align: left;
+    margin-top: 7%;
+  }
+  .icon_section img {
+    float: right;
+  }
+}
+
+form {
+  font-size: .5em;
+  padding-top: 5%;
+}
+
+.order-btn {
+  font-size: .7em;
+  background: transparent;
+  border: 5px solid #7daf63;
+  color: #c3a79b;
+  border-radius: 7px;
+  margin: 5% 0;
+  font-size: 1.5em;
+}
+.order-btn:hover, .order-btn:active, .order-btn:visited, .order-btn:focus {
+  background-color: #7daf63;
+  border-color: #E3C691;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px gray;
+  transition: all .2s ease-in-out;
+}
+
+.creamImage img {
+  max-width: 100%;
+  margin: 7% auto;
 }
 
 .product_section {
@@ -185,17 +239,36 @@ header hr {
   display: block;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 700px;
+  height: 1000px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .product_section {
     background: url("../images/creamBadgesSmallScreen.png") no-repeat;
     display: block;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 700px;
-    margin-top: 520%;
+    height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .product_section {
+    height: 300px;
+  }
+}
+@media (min-width: 801px) {
+  .product_section {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .product_section {
+    height: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .product_section {
+    height: 670px;
   }
 }
 
@@ -204,10 +277,36 @@ footer {
 }
 footer .copyright {
   background-color: #eddbba;
-  margin-top: 300%;
-  padding: 10% 0;
+  padding: 4% 0;
   text-align: center;
+}
+@media (min-width: 768px) {
+  footer .copyright {
+    padding: 2%;
+  }
+}
+footer nav {
+  width: 50%;
+  margin: 0 auto;
+}
+footer nav a {
+  color: black;
+  font-size: 1.4em;
+}
+@media (min-width: 768px) {
+  footer nav {
+    width: 30%;
+  }
 }
 footer .ingredients, footer .disclaimer {
   margin: 5%;
+}
+@media (min-width: 768px) {
+  footer .ingredients, footer .disclaimer {
+    margin: 1%;
+  }
+}
+
+footer.copyright_section {
+  background: #B08B7B;
 }

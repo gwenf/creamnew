@@ -1,0 +1,76 @@
+//main body styles
+.icon_section {
+  padding-top: 10%;
+  text-align: center;
+  img {
+    width: 70%;
+    display: block;
+    margin: 5% auto;
+  }
+  @media (min-width: 406px) {
+      padding-top: 90%;
+  }
+  @media (min-width: 501px) {
+      padding-top: 0;
+  }
+  @media (min-width: 768px) {
+      img {
+        width: 50%;
+      }
+  }
+  @media (min-width: 992px) {
+    .icon_text {
+      text-align: left;
+      margin-top: 7%;
+    }
+    img {
+      float: right;
+    }
+  }
+}
+
+form {
+  font-size: .5em;
+  padding-top: 5%;
+}
+.order-btn {
+  @include btn;
+  font-size: 1.5em;
+}
+
+.creamImage {
+  img {
+    max-width: 100%;
+    margin: 7% auto;
+  }
+}
+
+//image right above the footer and below the main content
+.product_section {
+  background-image: url(../images/creamBanner.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: 500px) {
+    background: url('../images/creamBadgesSmallScreen.png') no-repeat;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+  }
+  @media (max-width: 800px) {
+   height: 300px;
+  }
+  @media (min-width: 801px) {
+   height: 400px;
+  }
+  @media (min-width: 1200px) {
+   height: 500px;
+  }
+  @media (min-width: 1400px) {
+   height: 670px;
+  }
+}
